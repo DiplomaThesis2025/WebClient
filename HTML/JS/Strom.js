@@ -67,7 +67,7 @@ async function SG() {                                                  // Organi
 });
 }
 async function SGgetDataStrom() {
-const SGresponse = await fetch('StromGesamt.csv');
+const SGresponse = await fetch('CSV/StromGesamt.csv');
 const SGdata = await SGresponse.text();
 const SGtable = SGdata.split('\n').slice(0);
       SGtable.forEach(row => {
@@ -146,7 +146,7 @@ async function TH() {                                                  // Organi
 });
 }
 async function THgetDataStrom() {
-const THresponse = await fetch('StromTheorie.csv');
+const THresponse = await fetch('CSV/StromTheorie.csv');
 const THdata = await THresponse.text();
 const THtable = THdata.split('\n').slice(0);
       THtable.forEach(row => {
@@ -225,7 +225,7 @@ async function WE() {                                                  // Organi
 });
 }
 async function WEgetDataStrom() {
-const WEresponse = await fetch('StromWerkstatt.csv');
+const WEresponse = await fetch('CSV/StromWerkstatt.csv');
 const WEdata = await WEresponse.text();
 const WEtable = WEdata.split('\n').slice(0);
       WEtable.forEach(row => {

@@ -34,11 +34,12 @@ async function OV() {                                                         //
                             ]
                   }]
             },
-        options: {},
+        options: {
+        }
 });
 }
 async function OVgetDataStrom() {
-  const OVresponse = await fetch('StromGesamt.csv');
+  const OVresponse = await fetch('CSV/StromGesamt.csv');
   const OVdata = await OVresponse.text();
   const OVtable = OVdata.split('\n').slice(0);
     OVtable.forEach(row => {
